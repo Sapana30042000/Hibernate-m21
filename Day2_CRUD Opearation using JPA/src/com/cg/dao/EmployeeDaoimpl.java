@@ -33,6 +33,7 @@ public class EmployeeDaoimpl implements EmployeeDao
 	//to retrive a data=>find(classname,pk)
 	public Employee getEmployeeById(int ID) 
 	{
+		@SuppressWarnings("unused")
 		Employee emp=em.find(Employee.class, ID);
 		return null;
 	}
